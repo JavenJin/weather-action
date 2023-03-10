@@ -13,8 +13,6 @@ jobs:
         uses: actions/checkout@v1
       - name: 'Get Weather'
         run: bash ./weather.sh
-      - name: 'Get Weather Png'
-        run: bash ./weather-png.sh
       - name: 'Get Date'
         run: echo "REPORT_DATE=$(TZ=':Asia/Xian' date '+%Y-%m-%d %T')" >> $GITHUB_ENV
       - name: 'Send mail'
