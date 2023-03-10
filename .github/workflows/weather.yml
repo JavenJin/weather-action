@@ -25,7 +25,8 @@ jobs:
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: Xian Weather Report (${{env.REPORT_DATE}})
-          body: file://result.html + file://result.png
+          body: file://result.png
+          html_body: file://result.html
           to: Javen.Jin@outlook.com
           from: GitHub Actions
           content_type: text/html
