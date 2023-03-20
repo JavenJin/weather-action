@@ -24,6 +24,6 @@ jobs:
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: Xian Weather Report (${{env.REPORT_DATE}})
           body: file://result.html
-          to: Javen.Jin@outlook.com
+          to: ${{ secrets.TO_EMAIL_ADDRESS }}
           from: GitHub Actions
           content_type: text/html
